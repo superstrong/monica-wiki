@@ -17,7 +17,7 @@ The preferred OS distribution is Ubuntu 16.04, simply because all the developmen
 ### Generic Linux instructions
 
 * [Ubuntu](Installing-Monica-on-Ubuntu)
-* Debian
+* [Debian](Installing-Monica-on-Debian)
 
 ### Platforms
 
