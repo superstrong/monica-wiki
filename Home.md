@@ -4,7 +4,7 @@ This wiki is the main source of documentation for developers working with (or co
 
 ## Table of content
 
-* Installation on your server
+* [Installation on your server](Installation-instructions)
 * Maintaining your server
 * Contribute as a developer
 * Deployment instructions for Monica's core contributors
