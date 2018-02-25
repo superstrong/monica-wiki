@@ -21,6 +21,6 @@ The preferred OS distribution is Ubuntu 16.04, simply because all the developmen
 
 ### Platforms
 
-* Docker
+* [Docker](Installing-Monica-on-Docker)
 * Heroku
 * Vagrant
