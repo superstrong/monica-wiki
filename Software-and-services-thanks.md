@@ -6,7 +6,7 @@ Those companies have graciously offered a paid plan for free.
 
 | **Supported by**                 | **Description**                                                                               |
 |----------------------------------|-----------------------------------------------------------------------------------------------|
-| [[/images/sentry-logo-black.png]] | Sentry is a cross-platform crash reporting and aggregation platform. We use it to analyze what's going on in production. |
+| [[/images/sentry-logo-black.png]] | [Sentry](https://sentry.io) is a cross-platform crash reporting and aggregation platform. We use it to analyze what's going on in production. |
 | ![navicat-logo][navicat-logo]   | Crowdin is a translation platform. |
 | ![navicat-logo][navicat-logo]   | Sauce Labs provides the world’s largest cloud-based platform for the automated testing of web and mobile applications. |
 
