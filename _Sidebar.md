@@ -1,5 +1,7 @@
 **ABOUT MONICA** 
 
+- [Home](Home)
+
 **Introduction**  
 - [Installation](Installation-instructions)  
 - [How to contribute](Contribute-as-a-developer)
