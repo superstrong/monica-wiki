@@ -6,4 +6,3 @@
 
 **Thanks**
 - [Software and services](Software-and-services-thanks)
-- [Contributors](Our-contributors)  
