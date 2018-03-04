@@ -2,7 +2,7 @@ Monicahq vagrant box is available on [Vagrant Cloud](https://app.vagrantup.com/m
 
 The only provider for this box is virtualbox.
 
-## Run the monicahq vagrant box
+## Run the monicahq vagrant box
 
 1. Download and install [Vagrant](https://www.vagrantup.com/) for your operating system
 2. Create a folder to put the vagrant configuration files
@@ -45,7 +45,7 @@ Once the process is complete you can either access the virtual machine by typing
 * The project is installed in `/var/www/html/monica`
 * The root folder for the web server is `/var/www/html/monica/public`
 
-## Build your own image
+## Build your own image
 
 1. Download the `Vagrantfile` script
 ```sh
