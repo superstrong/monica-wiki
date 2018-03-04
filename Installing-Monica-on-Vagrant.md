@@ -1,3 +1,5 @@
+<img width="96" height="117" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Vagrant.png/197px-Vagrant.png" />
+
 Monicahq vagrant box is available on [Vagrant Cloud](https://app.vagrantup.com/monicahq/boxes/monicahq).
 
 The only provider for this box is virtualbox.
