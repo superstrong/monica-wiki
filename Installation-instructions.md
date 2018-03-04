@@ -24,3 +24,4 @@ The preferred OS distribution is Ubuntu 16.04, simply because all the developmen
 * [Docker](Installing-Monica-on-Docker)
 * [Heroku](Installing-Monica-on-Heroku)
 * [Vagrant](Installing-Monica-on-Vagrant)
+* [YunoHost](https://github.com/YunoHost-Apps/monica_ynh)
