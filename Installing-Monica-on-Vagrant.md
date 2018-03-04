@@ -1,4 +1,8 @@
-If you want a quick and easy way to get a Monica development/test environment up and running without having to take care of the installation process yourself, you can create a pre-configured virtual machine using Vagrant.
+Monicahq vagrant box is available on [Vagrant Cloud](https://app.vagrantup.com/monicahq/boxes/monicahq).
+
+The only provider for this box is virtualbox.
+
+## Run the monicahq vagrant box
 
 1. Download and install [Vagrant](https://www.vagrantup.com/) for your operating system
 2. Create a folder to put the vagrant configuration files
@@ -6,23 +10,24 @@ If you want a quick and easy way to get a Monica development/test environment up
 mkdir ~/monica
 cd ~/monica
 ```
-3. Download the `Vagrantfile` and the `provision.sh` script
+3. Download the `Vagrantfile` script
 ```sh
 curl -sS https://raw.githubusercontent.com/monicahq/monica/master/scripts/vagrant/Vagrantfile -o Vagrantfile
-curl -sS https://raw.githubusercontent.com/monicahq/monica/master/scripts/vagrant/provision.sh -o provision.sh
 ```
-4. Initialize a virtual machine based on Ubuntu 16.04:
-```sh
-vagrant box add ubuntu/xenial64
+4. Edit Vagrantfile to set the appropriate host port number (default: 8080)
+```
+...
+config.vm.network "forwarded_port", guest: 80, host: 8080
+...
 ```
 5. Launch the virtual machine with
 ```sh
 vagrant up
 ```
 
-The virtual machine will be first created and then provisioned using the `provision.sh` script, which will take care of installing Monica for you.
+The virtual machine will be created and pulled up with Vagrantfile script.
 
-Once the installation process is complete (you will see all of the output in your terminal window), you can either access the virtual machine by typing `vagrant ssh` in your terminal, or access the Monica web interface by opening `http://localhost:8080` in your browser on your host machine.
+Once the process is complete you can either access the virtual machine by typing `vagrant ssh` in your terminal, or access the Monica web interface by opening [http://localhost:8080](http://localhost:8080) in your browser on your host machine.
 
 ## Default Monica configuration in the VM
 
@@ -39,3 +44,26 @@ Once the installation process is complete (you will see all of the output in you
 
 * The project is installed in `/var/www/html/monica`
 * The root folder for the web server is `/var/www/html/monica/public`
+
+## Build your own image
+
+1. Download the `Vagrantfile` script
+```sh
+curl -sS https://raw.githubusercontent.com/monicahq/monica/master/scripts/vagrant/build/Vagrantfile -o Vagrantfile
+curl -sS https://raw.githubusercontent.com/monicahq/monica/master/scripts/vagrant/build/install-monica.sh -o install-monica.sh
+```
+2. Run the box by calling:
+```sh
+vagrant up monicahq-latest
+```
+for the latest commit, or with a GIT_TAG to run a specific version:
+```sh
+GIT_TAG=$(GIT_TAG) vagrant up monicahq-stable
+```
+3. Package you own box
+You can package it to use it more quickly later:
+```sh
+vagrant up monicahq-latest
+vagrant package monicahq-latest --output ./my-monicahq.box
+vagrant box add my-monicahq ./my-monicahq.box
+```
