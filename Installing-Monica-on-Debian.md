@@ -1,3 +1,5 @@
+<img alt="Logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Debian-OpenLogo.svg/109px-Debian-OpenLogo.svg.png" width="96" height="127" />
+
 Monica can run on Debian Stretch.
 
 #### 1. Install the required packages:
