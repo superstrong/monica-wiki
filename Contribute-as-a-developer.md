@@ -243,6 +243,9 @@ Localization of the application is handled by the [default i18n helper provided 
 
 For everything that is in VueJS though, things are a bit different. We have to use a special library to allow translated strings to be available in the javascript views. The helper in Vue is slightly different.
 
-Instead of the regular `trans('file.string')` definition, you need to write `$t('file.string')`.
+You can use these replacements instead of the regular (php) definition:
+* `trans('file.string')` is writen `$t('file.string')`.
+* `trans('file.string', ['param' => $value])` is writen `$t('file.string', {param: value})`.
+* `trans_choice('file.string', $count)` is writen `$tc('file.string', count)`.
 
-Moreover, everytime a string changes in a translation file, you need to regenerate all the strings so they can be made available in JS. To do this, use `php artisan vue-i18n:generate`.
+Moreover, everytime a string changes in a translation file, you need to regenerate all the strings so they can be made available in JS. To do this, use `php artisan lang:generate`.
