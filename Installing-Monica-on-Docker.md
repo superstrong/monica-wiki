@@ -111,4 +111,4 @@ between runs. See `docker-compose.yml` for examples.
 
 #### Other documents to read
 
-[Connecting to MySQL inside of a Docker container](../database/connecting.md)
+[Connecting to MySQL inside of a Docker container](Installation-with-Docker:-connection-to-MySQL)
