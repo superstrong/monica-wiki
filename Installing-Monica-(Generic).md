@@ -5,7 +5,7 @@
 If you don't want to use Docker, the best way to setup the project is to use the same configuration that [Homestead](https://laravel.com/docs/5.3/homestead) uses. Basically, Monica depends on the following:
 
 * Git
-* PHP 7.0+
+* PHP 7.1+
 * [Composer](https://getcomposer.org/)
 * MySQL
 * Optional: Redis or Beanstalk
