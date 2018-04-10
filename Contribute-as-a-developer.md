@@ -237,7 +237,7 @@ We are using [Vue.js](https://vuejs.org/) in some parts of the application, and 
 
 #### Application
 
-Localization of the application is handled by the [default i18n helper provided by Laravel](https://laravel.com/docs/5.5/localization).
+Localization of the application is handled by the [default i18n helper provided by Laravel](https://laravel.com/docs/5.5/localization). When adding or modifying strings, you only have to handle the `en` language, which is stored in `resources/lang/en/`. The other locales are going to be handled by Crowdin, our translation platform.
 
 #### VueJS
 
