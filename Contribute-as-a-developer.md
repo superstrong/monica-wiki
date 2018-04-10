@@ -239,7 +239,13 @@ We are using [Vue.js](https://vuejs.org/) in some parts of the application, and 
 
 Localization of the application is handled by the [default i18n helper provided by Laravel](https://laravel.com/docs/5.5/localization). When adding or modifying strings, you only have to handle the `en` language, which is stored in `resources/lang/en/`. The other locales are going to be handled by Crowdin, our translation platform.
 
-#### VueJS
+We also have [a dedicated page](Contribute-to-the-translation) for our translators, just in case you need it.
+
+##### Laravel
+
+We use the default Laravel helper: `trans('app.save')`. 
+
+##### VueJS
 
 For everything that is in VueJS though, things are a bit different. We have to use a special library to allow translated strings to be available in the javascript views. The helper in Vue is slightly different.
 
@@ -248,4 +254,6 @@ You can use these replacements instead of the regular (php) definition:
 * `trans('file.string', ['param' => $value])` is writen `$t('file.string', {param: value})`.
 * `trans_choice('file.string', $count)` is writen `$tc('file.string', count)`.
 
-Moreover, everytime a string changes in a translation file, you need to regenerate all the strings so they can be made available in JS. To do this, use `php artisan lang:generate`.
+Important note: every time a string changes in a translation file, you need to regenerate all the strings so they can be made available in JS. To do this, 
+* use `php artisan lang:generate`
+* then compile all the JS assets `npm run prod`, and commit the whole.
