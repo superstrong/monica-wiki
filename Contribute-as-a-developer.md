@@ -80,8 +80,8 @@ Once the above softwares are installed (or if you've finished the installation o
 1. Run `make install` in the folder the repository has been cloned. This will run :
     1. `cp .env.example .env` to create your own version of all the environment variables needed for the project to work.
     1. `composer install --no-interaction --no-suggest` to install all packages.
-    1. `npm install` to install all the front-end dependencies and tools needed to compile assets.
-    1. `npm run dev` to compile js and css assets.
+    1. `yarn install` to install all the front-end dependencies and tools needed to compile assets.
+    1. `yarn run dev` to compile js and css assets.
     1. `php artisan key:generate` to generate an application key. This will set `APP_KEY` with the right value automatically.
     1. `php artisan setup:test` to setup the database.
        - By default this command will also populate the database with fake data.
@@ -96,8 +96,8 @@ If you haven't skipped the seeding of fake data, two accounts are created by def
 
 To update a current installation with the latest dependencies, just run `make update` to run
   1. `composer install --no-interaction --no-suggest`
-  1. `npm install`
-  1. `npm run dev`
+  1. `yarn upgrade`
+  1. `yarn run dev`
   1. `php artisan migrate`
 
 ## Testing environment
@@ -213,15 +213,15 @@ The above comments can seem harsh and we apologize in advance. However you have 
 
 We use [mix](https://laravel.com/docs/5.5/mix) to manage the front-end and its dependencies, and also to compile and/watch the assets. **Please note that we should do our best to prevent introducing new dependencies if we can prevent it**.
 
-Mix should be available in your development environment if you have installed Monica locally and ran `npm install` in the first place.
+Mix should be available in your development environment if you have installed Monica locally and ran `yarn install` in the first place.
 
 If you need to add a new dependency, update `package.json` to add it and make sure you commit `package-lock.json` once `package.json` is updated.
 
 ### Watching and compiling assets
 
-CSS is written in SASS and therefore needs to be compiled before being used by the application. To compile those front-end assets, use `npm run dev`.
+CSS is written in SASS and therefore needs to be compiled before being used by the application. To compile those front-end assets, use `yarn run dev`.
 
-To monitor changes and compile assets on the fly, use `npm run watch`.
+To monitor changes and compile assets on the fly, use `yarn run watch`.
 
 ### CSS
 
@@ -256,4 +256,4 @@ You can use these replacements instead of the regular (php) definition:
 
 Important note: every time a string changes in a translation file, you need to regenerate all the strings so they can be made available in JS. To do this, 
 * use `php artisan lang:generate`
-* then compile all the JS assets `npm run prod`, and commit the whole.
+* then compile all the JS assets `yarn run prod`, and commit the whole.
