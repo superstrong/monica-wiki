@@ -1,4 +1,10 @@
-Are you interested in giving a hand? We can't be more excited about it. Thanks in advance! Here are some guidelines that could help you to get started quickly.
+Are you interested in giving a hand? We can't be more excited about it. Thanks in advance! 
+
+Notes: 
+* _we are doing everything we can to review pull requests submitted by the community as soon as possible. It can take days (or weeks) to finalize a review, going through rounds of changes, etc... This is why we kindly ask you to be patient during this process._
+* _no changes are too small. If you want to contribute, even fixing a typo will help._
+
+Here are some guidelines that could help you to get started quickly.
 
 <!-- This uses the MarkdownTOC's Sublime Text plugin to autogenerate the TOC -->
 <!-- MarkdownTOC autolink="true" depth="4" bracket="round" list_bullets="*" -->
