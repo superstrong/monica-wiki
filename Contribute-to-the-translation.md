@@ -28,8 +28,9 @@ We use the [vue-i18n](https://www.npmjs.com/package/vue-i18n) package.
 
 - **simple string**
 - **string with parameters**: see [vue-i18n doc](http://kazupon.github.io/vue-i18n/en/formatting.html#html-formatting).
-  To translate: integrate the text replacement in your translation, like "{param}".
-  Example: `{name}’s birthday` => `anniversaire de {name}`
+  - To translate: integrate the text replacement in your translation, like "{param}".
+  - Example: `{name}’s birthday` => `anniversaire de {name}`
+  - Other example: `{{ $t('people.stay_in_touch_frequency', { count: frequency }) }}`
 - **plural forms**: [vue-i18n doc](http://kazupon.github.io/vue-i18n/en/pluralization.html).
   Actual version of vue-i18n can only render 2 messages separate with a pipe. Left message for 1 element, right message for 2 or more elements.
 
