@@ -8,9 +8,7 @@ For example, if you have the `pwgen` utility installed, you could copy and paste
 Your Monica instance will use a [ClearDB Ignite plan](https://elements.heroku.com/addons/cleardb) (free) by default. Additional environment variables, such as details of the mail server, can be added after setup through the Heroku interface.
 Monica doesn't require a lot of power - it means it will run on the free plan provided by Heroku.
 
-First installation will create a new account :
-* Login: `admin@admin.com`
-* Password: `admin`
+When you visit the app for the first time, you will be prompted to register a new account. Put in your email address and password and you will be logged into the app. This is the only account that has access unless you invite other people.
 
 Feel free to update these credentials in the settings after installation.
 
