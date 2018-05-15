@@ -5,24 +5,23 @@ steps below to update it, **every single time**, or you will run into problems.
 
 1. Always make a backup of your data before upgrading.
 1. Check that your backup is valid.
-1. Read the [release notes](https://github.com/monicahq/monica/blob/master/CHANGELOG)
-to check for breaking changes.
+1. Read the [release notes](https://github.com/monicahq/monica/blob/master/CHANGELOG) to check for breaking changes.
 1. Update sources:
     1. Consider check out a tagged version of Monica since `master` branch may not always be stable.
        Find the latest official version on the [release page](https://github.com/monicahq/monica/releases)
-    ```sh
-    # Clone the desired version
-    git checkout tags/v1.6.2
-    ```
+       ```sh
+       # Clone the desired version
+       git checkout tags/v1.6.2
+       ```
     1. Or check out `master`
-    ```sh
-    git pull origin master
-    ```
+       ```sh
+       git pull origin master
+       ```
 1. Then, run the following command at the root of the project:
-```
-composer install --no-interaction --no-suggest --no-dev
-php artisan monica:update --force
-```
+   ```sh
+   composer install --no-interaction --no-suggest --no-dev
+   php artisan monica:update --force
+   ```
 
 Your instance should be updated.
 
