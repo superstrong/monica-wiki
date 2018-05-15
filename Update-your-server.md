@@ -19,10 +19,9 @@ to check for breaking changes.
     git pull origin master
     ```
 1. Then, run the following command at the root of the project:
-
 ```
 composer install --no-interaction --no-suggest --no-dev
-php artisan migrate --force
+php artisan monica:update --force
 ```
 
 Your instance should be updated.
@@ -56,7 +55,6 @@ Then, follow the steps:
 
 * `php artisan migrate`
 * `php artisan db:seed --class ActivityTypesTableSeeder`
-* `php artisan db:seed --class CountriesSeederTable`
 * Then import `monica.sql` into your database. Tools like phpmyadmin or Sequel
 Pro might help you with that.
 * Finally, sign in with the same credentials as the ones used on
