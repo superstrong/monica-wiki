@@ -12,6 +12,17 @@ When you visit the app for the first time, you will be prompted to register a ne
 
 Feel free to update these credentials in the settings after installation.
 
+### Generating Personal Access Tokens
+
+You cannot generate personal access tokens from the UI. Instead:
+
+* Install the [Heroku CLI](https://devcenter.heroku.com/categories/command-line) and log in.
+* From your command line, run `heroku run bash -a <APP-ID>`.
+* Run `php artisan passport:install`.
+* Store the tokens that are generated.
+
+Read the general [setup instructions](https://github.com/monicahq/monica/wiki/Installing-Monica-(Generic)#3-configure-monica) for more ways to customize your app and enable background alerts.
+
 ## Limitations
 
 * No email by default. Email configuration isn't required to use Monica on Heroku, but it's recommended. Mailgun has a [free email add-on on Heroku](https://elements.heroku.com/addons/mailgun) that is easy to set up.
